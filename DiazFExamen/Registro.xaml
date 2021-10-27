@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiazFExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+                <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" TextColor="#E0F2F2" FontSize="24"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" Grid.Row="0" Grid.Column="0" TextColor="#1CC84F"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1" TextColor="#1CC84F"/>
+                <Label Text="Monto Inicial:" Grid.Row="1" Grid.Column="0" TextColor="#1CC84F"/>
+                <Entry x:Name="txtMontoI" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextColor="#1CC84F"/>
+                <Label Text="Pago mensual:" Grid.Row="2" Grid.Column="0" TextColor="#1CC84F"/>
+                <Entry x:Name="txtPagoM" IsReadOnly="True" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" TextColor="#1CC84F"/>
+            </Grid>
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked_1"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

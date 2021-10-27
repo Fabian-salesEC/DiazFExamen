@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiazFExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+                <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" TextColor="#E0F2F2" FontSize="24"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+               
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" Grid.Row="0" Grid.Column="0" TextColor="#1CC84F"/>
+                <Entry x:Name="txtNombre" IsReadOnly="True" Grid.Row="0" Grid.Column="1" TextColor="#1CC84F"/>
+                <Label Text="Total a pagar:" Grid.Row="1" Grid.Column="0" TextColor="#1CC84F"/>
+                <Entry x:Name="txtTotal" IsReadOnly="True" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextColor="#1CC84F"/>
+               
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

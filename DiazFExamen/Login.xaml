@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiazFExamen.Login">
+    <ContentPage.Content>
+       
+        <StackLayout>
+               <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            </Frame>
+            
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario:" Grid.Row="0" Grid.Column="0" TextColor="#2968EA"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario" Grid.Row="0" Grid.Column="1" TextColor="#2968EA"/>
+                <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0" TextColor="#2968EA"/>
+                <Entry x:Name="txtClave" IsPassword="True" Placeholder="Ingrese la clave" Grid.Row="1" Grid.Column="1" TextColor="#2968EA"/>
+
+            </Grid>
+            <Button x:Name="btnLogin" Text="Ingresar" Clicked="btnLogin_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
